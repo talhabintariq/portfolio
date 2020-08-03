@@ -54,8 +54,8 @@ function App() {
                   <div id="preview">
                     <div id="corner-tl" className="corner"></div>
                     <div id="corner-tr" className="corner"></div>
-                    <h3>What I Do</h3>
-                    <p>I build things for the web.</p>
+										<h3>{translate('whatIDo')}</h3>
+										<p>{translate('iBuild')}</p>
                     <div id="corner-br" className="corner"></div>
                     <div id="corner-bl" className="corner"></div>
                   </div>
@@ -69,17 +69,15 @@ function App() {
           <div className="main-container">
             <div className="about-wrapper">
               <div className="about-me">
-                <h4>More about me</h4>
+								<h4>{translate('moreAboutMe')}</h4>
 
-                <p>
-                  I'm a software engineer based in Ann Arbor, Michigan
-                  specializing in building (and occasionally designing)
-                  exceptional, high-quality websites and applications.
+								<p>
+									{translate('description')}
                 </p>
 
                 <hr />
 
-                <h4>TOP EXPERTISE</h4>
+								<h4>{translate('TOPEXPERTISE')}</h4>
                 <div id="skills">
                   <ul>
                     <li>JavaScript</li>
@@ -100,7 +98,7 @@ function App() {
 
               <div className="social-links">
                 <img id="social_img" src="images/follow.jpg" alt="" />
-                <h3>Find me on GitHub and LinkedIn</h3>
+                <h3>{translate('findMe')}</h3>
 
                 <a
                   target="_blank"
@@ -124,16 +122,16 @@ function App() {
 
         <section className="s1">
           <div className="main-container">
-            <h3 style={{ textAlign: "center" }}>Some of my past projects</h3>
+						<h3 style={{ textAlign: "center" }}>{translate('sampleWork')}</h3>
 
             <div className="post-wrapper">
               <div>
                 <div className="post">
                   <img className="thumbnail" src={thumbnail} alt="" />
                   <div className="post-preview">
-                    <h6 className="post-title">Project Title</h6>
-                    <p className="post-intro">Project Description</p>
-                    <a href="post.html">Read More</a>
+										<h6 className="post-title">{translate('projectTile')}</h6>
+										<p className="post-intro">{translate('projectDescription')}</p>
+										<a href="post.html">{translate('readMore')}</a>
                   </div>
                 </div>
               </div>
@@ -142,9 +140,9 @@ function App() {
                 <div className="post">
                   <img className="thumbnail" src={thumbnail} alt="" />
                   <div className="post-preview">
-                    <h6 className="post-title">Project Title</h6>
-                    <p className="post-intro">Project Description</p>
-                    <a href="post.html">Read More</a>
+                    <h6 className="post-title">{translate('projectTile')}</h6>
+                    <p className="post-intro">{translate('projectDescription')}</p>
+                    <a href="post.html">{translate('readMore')}</a>
                   </div>
                 </div>
               </div>
@@ -153,9 +151,9 @@ function App() {
                 <div className="post">
                   <img className="thumbnail" src={thumbnail} alt="" />
                   <div className="post-preview">
-                    <h6 className="post-title">Project Title</h6>
-                    <p className="post-intro">Project Description</p>
-                    <a href="post.html">Read More</a>
+                    <h6 className="post-title">{translate('projectTile')}</h6>
+                    <p className="post-intro">{translate('projectDescription')}</p>
+                    <a href="post.html">{translate('readMore')}</a>
                   </div>
                 </div>
               </div>
@@ -165,19 +163,19 @@ function App() {
 
         <section className="s2">
           <div className="main-container">
-            <h3 style={{ textAlign: "center" }}>Get In Touch</h3>
+            <h3 style={{ textAlign: "center" }}>{translate('getInTouch')}</h3>
 
             <form id="contact-form">
-              <label>Name</label>
+							<label>{translate('name')}</label>
               <input className="input-field" type="text" name="name" />
 
-              <label>Subject</label>
+							<label>{translate('subject')}</label>
               <input className="input-field" type="text" name="subject" />
 
-              <label>Email</label>
+							<label>{translate('email')}</label>
               <input className="input-field" type="text" name="email" />
 
-              <label>Message</label>
+              <label>{translate('message')}</label>
               <textarea className="input-field" name="message"></textarea>
 
               <input id="submit-btn" type="submit" value="Send" />
