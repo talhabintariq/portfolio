@@ -5,7 +5,7 @@ import translate from "./i18nProvider/translate";
 import "./App.css";
 import ProfilePictuire from "./images/Talha.jpg";
 import thumbnail from "./images/coming_soon.jpg";
-import "./default.css";
+import "./style.scss";
 
 function App() {
   const [locale, setLocale] = useState(LOCALES.ENGLISH);
