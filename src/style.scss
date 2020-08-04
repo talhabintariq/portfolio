@@ -87,7 +87,6 @@ h6 {
   padding: 15px;
   
   button {
-    padding: 5px;
     margin: 5px;
   }
 }
@@ -261,6 +260,7 @@ h6 {
 #skills {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 15px;
   background-color: var(--previewShadow);
 }
 

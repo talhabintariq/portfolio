@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { I18nPropvider, LOCALES } from "./i18nProvider";
 import translate from "./i18nProvider/translate";
+import { Button } from 'reactstrap';
 
 import "./App.css";
 import ProfilePictuire from "./images/Talha.jpg";
@@ -15,9 +16,9 @@ function App() {
       <div className="App">
         <section className="s1">
           <div className="language-buttons">
-            <button className="english-language" onClick={() => setLocale(LOCALES.ENGLISH)}>English</button>
-            <button className="french-language" onClick={() => setLocale(LOCALES.FRENCH)}>French</button>
-            <button className="german-language" onClick={() => setLocale(LOCALES.GERMAN)}>German</button>
+            <Button color="info" onClick={() => setLocale(LOCALES.ENGLISH)}>English</Button>
+            <Button color="info" onClick={() => setLocale(LOCALES.FRENCH)}>French</Button>
+            <Button color="info" onClick={() => setLocale(LOCALES.GERMAN)}>German</Button>
           </div>
           <div className="mainContainer">
             <div className="greeting-wrapper">
@@ -116,7 +117,7 @@ function App() {
 
         <section className="s1">
           <div className="mainContainer">
-            <h3 style={{ textAlign: "center" }}>{translate("sampleWork")}</h3>
+            <h3 style={{ textAlign: "center", marginTop: 25 }}>{translate("sampleWork")}</h3>
 
             <div className="post-wrapper">
               <div>
