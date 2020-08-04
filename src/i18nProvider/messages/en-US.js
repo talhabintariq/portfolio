@@ -1,3 +1,4 @@
+/* eslint-disable quote-props */
 import { LOCALES } from '../constants';
 
 export default {
