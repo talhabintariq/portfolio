@@ -117,7 +117,7 @@ function App() {
 
         <section className="s1">
           <div className="mainContainer">
-            <h3 style={{ textAlign: "center", marginTop: 25 }}>{translate("sampleWork")}</h3>
+            <h3 style={{ textAlign: "center", paddingTop: 30 }}>{translate("sampleWork")}</h3>
 
             <div className="post-wrapper">
               <div>
