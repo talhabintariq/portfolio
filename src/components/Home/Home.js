@@ -135,8 +135,6 @@ const Home = () => {
                     <p className="post-intro">
                       {translate('projectDescription')}
                     </p>
-                    <a href="post.html">{translate('readMore')}</a>
-                    <div>T</div>
                     <Link to="/MoviesSearch">{translate('readMore')}</Link>
                   </div>
                 </div>
@@ -150,7 +148,7 @@ const Home = () => {
                     <p className="post-intro">
                       {translate('projectDescription')}
                     </p>
-                    <a href="post.html">{translate('readMore')}</a>
+                    <Link to="/MoviesSearch">{translate('readMore')}</Link>
                   </div>
                 </div>
               </div>
@@ -163,7 +161,7 @@ const Home = () => {
                     <p className="post-intro">
                       {translate('projectDescription')}
                     </p>
-                    <a href="post.html">{translate('readMore')}</a>
+                    <Link to="/MoviesSearch">{translate('readMore')}</Link>
                   </div>
                 </div>
               </div>
