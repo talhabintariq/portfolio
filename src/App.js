@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Test from './components/MoviesSearch/test';
+import MoviesSearch from './components/MoviesSearch/MoviesSearch';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <main>
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/test" component={Test} />
+          <Route path="/MoviesSearch" component={MoviesSearch} />
         </Switch>
       </main>
     </div>

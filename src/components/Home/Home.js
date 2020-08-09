@@ -137,7 +137,7 @@ const Home = () => {
                     </p>
                     <a href="post.html">{translate('readMore')}</a>
                     <div>T</div>
-                    <Link to="/test">{translate('readMore')}</Link>
+                    <Link to="/MoviesSearch">{translate('readMore')}</Link>
                   </div>
                 </div>
               </div>
