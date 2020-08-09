@@ -170,7 +170,7 @@ const Home = () => {
 
         <section className="s2">
           <div className="mainContainer">
-            <h3 style={{ textAlign: 'center' }}>{translate('getInTouch')}</h3>
+            <h3 style={{ textAlign: 'center', paddingTop: '25px' }}>{translate('getInTouch')}</h3>
 
             <Form id="contact-form">
               <FormGroup>
