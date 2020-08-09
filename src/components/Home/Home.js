@@ -6,6 +6,7 @@ import {
   Label,
   Input,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import { I18nPropvider, LOCALES } from '../../i18nProvider';
 import translate from '../../i18nProvider/translate';
 
@@ -135,6 +136,8 @@ const Home = () => {
                       {translate('projectDescription')}
                     </p>
                     <a href="post.html">{translate('readMore')}</a>
+                    <div>T</div>
+                    <Link to="/test">{translate('readMore')}</Link>
                   </div>
                 </div>
               </div>
