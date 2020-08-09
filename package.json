@@ -11,6 +11,7 @@
     "i18next": "^19.6.3",
     "i18next-browser-languagedetector": "^5.0.0",
     "i18next-http-backend": "^1.0.17",
+    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
