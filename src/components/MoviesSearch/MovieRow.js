@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {
   Button,
 } from 'reactstrap';
-import './MoviesSearchStyle.css';
+import './MoviesSearch.scss';
 
 class MovieRow extends React.Component {
   constructor(props) {

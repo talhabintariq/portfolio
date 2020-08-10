@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import {
   Container,
-  Table,
+  Jumbotron,
   InputGroup,
   InputGroupAddon,
   InputGroupText,
   Input,
 } from 'reactstrap';
 import { FcSearch } from 'react-icons/fc';
-import './MoviesSearchStyle.css';
+import './MoviesSearch.scss';
 import MovieRow from './MovieRow';
 
 export default class MoviesSearch extends Component {
@@ -56,27 +56,22 @@ export default class MoviesSearch extends Component {
     const { rows } = this.state;
     return (
       <Container>
-        <Table className="titleBar">
-          <tbody>
-            <tr>
-              <td>
-                <img alt="app icon" width="50" src="green_app_icon.svg" />
-              </td>
-              <td width="8" />
-              <td>
-                <h1>MoviesDB Search</h1>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
-
+        <Jumbotron className="header">
+          <div className="logo">
+            <img alt="app icon" width="100" src="green_app_icon.svg" />
+          </div>
+          <div className="title">
+            <h1>MoviesDB Search</h1>
+          </div>
+        </Jumbotron>
         <InputGroup
+          size="lg"
           style={{
             paddingBottom: '15px',
           }}
         >
           <InputGroupAddon addonType="prepend">
-            <InputGroupText><FcSearch /></InputGroupText>
+            <InputGroupText><FcSearch size="1.5em" /></InputGroupText>
           </InputGroupAddon>
           <Input
             onChange={this.searchChangeHandler}

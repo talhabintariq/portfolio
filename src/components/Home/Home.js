@@ -13,7 +13,7 @@ import translate from '../../i18nProvider/translate';
 import '../../App.css';
 import ProfilePictuire from '../../images/Talha.jpg';
 import thumbnail from '../../images/coming_soon.jpg';
-import './style.scss';
+import './home.scss';
 
 const Home = () => {
   const [locale, setLocale] = useState(LOCALES.ENGLISH);
