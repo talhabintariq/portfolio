@@ -1,8 +1,18 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
+import {
+  Button,
+} from 'reactstrap';
+import './MoviesSearchStyle.css';
 
 class MovieRow extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.viewMovie = this.viewMovie.bind(this);
+  }
+
   viewMovie() {
     const { movie: { id } } = this.props;
     const url = `https://www.themoviedb.org/movie/${id}`;
@@ -20,12 +30,45 @@ class MovieRow extends React.Component {
         <tbody>
           <tr>
             <td>
-              <img alt="poster" width="120" src={poster_src} />
+              <img
+                style={{
+                  borderRadius: '5px',
+                  marginBottom: '5px',
+                }}
+                alt="poster"
+                width="150"
+                src={poster_src}
+              />
             </td>
-            <td>
-              <h3>{title}</h3>
-              <p>{overview}</p>
-              <input type="button" onClick={this.viewMovie.bind(this)} value="View" />
+            <td
+              style={{
+                paddingLeft: 10,
+              }}
+            >
+              <h3
+                style={{
+                  color: 'black',
+                  float: 'left',
+                }}
+              >
+                {title}
+              </h3>
+              <p
+                style={{
+                  color: 'black',
+                  float: 'left',
+                  textAlign: 'left',
+                }}
+              >
+                {overview}
+              </p>
+              <div
+                style={{
+                  width: '86px',
+                }}
+              >
+                <Button color="primary" onClick={this.viewMovie}>View</Button>
+              </div>
             </td>
           </tr>
         </tbody>
