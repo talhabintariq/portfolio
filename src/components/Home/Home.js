@@ -103,6 +103,10 @@ const Home = () => {
                 <h3>{translate('findMe')}</h3>
 
                 <a
+                  style={{
+                    width: '164px',
+                    margin: '0 auto',
+                  }}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/talhabintariq"
@@ -111,6 +115,10 @@ const Home = () => {
                 </a>
                 <br />
                 <a
+                  style={{
+                    width: '130px',
+                    margin: '0 auto',
+                  }}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.linkedin.com/in/ttariq1"
