@@ -131,9 +131,9 @@ const Home = () => {
                 <div className="post">
                   <img className="thumbnail" src={thumbnail} alt="" />
                   <div className="post-preview">
-                    <h6 className="post-title">{translate('projectTile')}</h6>
+                    <h6 className="post-title">{translate('projectTile-1')}</h6>
                     <p className="post-intro">
-                      {translate('projectDescription')}
+                      {translate('projectDescription-1')}
                     </p>
                     <Link to="/MoviesSearch">{translate('readMore')}</Link>
                   </div>
@@ -144,24 +144,11 @@ const Home = () => {
                 <div className="post">
                   <img className="thumbnail" src={thumbnail} alt="" />
                   <div className="post-preview">
-                    <h6 className="post-title">{translate('projectTile')}</h6>
+                    <h6 className="post-title">{translate('projectTitle-2')}</h6>
                     <p className="post-intro">
-                      {translate('projectDescription')}
+                      {translate('projectDescription-2')}
                     </p>
                     <Link to="/ImageSearch">{translate('readMore')}</Link>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div className="post">
-                  <img className="thumbnail" src={thumbnail} alt="" />
-                  <div className="post-preview">
-                    <h6 className="post-title">{translate('projectTile')}</h6>
-                    <p className="post-intro">
-                      {translate('projectDescription')}
-                    </p>
-                    <Link to="/MoviesSearch">{translate('readMore')}</Link>
                   </div>
                 </div>
               </div>
