@@ -14,8 +14,10 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
+  "parser": "babel-eslint",
   "plugins": [
-    "react"
+    "react",
+    "react-hooks"
   ],
   "rules": {
     "react/no-find-dom-node": 0,
@@ -29,6 +31,7 @@
     "no-underscore-dangle": 0,
     "class-methods-use-this": 0,
     "no-confusing-arrow": 0,
+    "react-hooks/rules-of-hooks": "error",
     "no-useless-rename": [
       0,
       {
