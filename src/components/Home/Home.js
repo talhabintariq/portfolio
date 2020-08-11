@@ -148,7 +148,7 @@ const Home = () => {
                     <p className="post-intro">
                       {translate('projectDescription')}
                     </p>
-                    <Link to="/MoviesSearch">{translate('readMore')}</Link>
+                    <Link to="/ImageSearch">{translate('readMore')}</Link>
                   </div>
                 </div>
               </div>
