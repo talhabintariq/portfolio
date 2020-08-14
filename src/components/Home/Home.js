@@ -29,6 +29,7 @@ const Home = () => {
           </div>
           <div className="mainContainer">
             <div className="greeting-wrapper">
+              <div>Test Test Test</div>
               <h1>{translate('hi')}</h1>
             </div>
 
