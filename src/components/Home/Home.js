@@ -11,8 +11,8 @@ import { I18nPropvider, LOCALES } from '../../i18nProvider';
 import translate from '../../i18nProvider/translate';
 
 import '../../App.css';
-import ProfilePictuire from '../../images/Talha.jpg';
-import thumbnail from '../../images/coming_soon.jpg';
+import ProfilePictuire from '../../assets/Talha.jpg';
+import reactThumbnail from '../../assets/react_icon.png';
 import './home.scss';
 
 const Home = () => {
@@ -136,7 +136,7 @@ const Home = () => {
             <div className="post-wrapper">
               <div>
                 <div className="post">
-                  <img className="thumbnail" src={thumbnail} alt="" />
+                  <img className="thumbnail" src={reactThumbnail} alt="" />
                   <div className="post-preview">
                     <h6 className="post-title">{translate('projectTile-1')}</h6>
                     <p className="post-intro">
@@ -149,7 +149,7 @@ const Home = () => {
 
               <div>
                 <div className="post">
-                  <img className="thumbnail" src={thumbnail} alt="" />
+                  <img className="thumbnail" src={reactThumbnail} alt="" />
                   <div className="post-preview">
                     <h6 className="post-title">{translate('projectTitle-2')}</h6>
                     <p className="post-intro">
