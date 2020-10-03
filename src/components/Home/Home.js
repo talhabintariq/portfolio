@@ -29,7 +29,6 @@ const Home = () => {
           </div>
           <div className="mainContainer">
             <div className="greeting-wrapper">
-              <div>Test Test Test</div>
               <h1>{translate('hi')}</h1>
             </div>
 
@@ -38,6 +37,7 @@ const Home = () => {
                 <div className="dots-wrapper">
                   <div id="dot-1" className="browser-dot" />
                   <div id="dot-2" className="browser-dot" />
+                  <div id="dot-3" className="browser-dot" />
                   <div id="dot-3" className="browser-dot" />
                 </div>
 
