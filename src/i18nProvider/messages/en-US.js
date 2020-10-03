@@ -3,7 +3,7 @@ import { LOCALES } from '../constants';
 
 export default {
   [LOCALES.ENGLISH]: {
-    'hi': "Hi, I'm Talha B. Tariq",
+    'hi': "Hi, I'm Talha B. Tariqqq",
     'contact': 'Contact',
     'whatIDo': 'What I Do',
     'iBuild': 'I build things for the web.',
