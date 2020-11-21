@@ -14,7 +14,7 @@ export default {
     'sampleWork': 'Some of my sample projects',
     'projectTile-1': 'Movies Search using React',
     'projectDescription-1': 'Project Description',
-    'projectTile-2': 'Image Finder using React & Material UI',
+    'projectTitle-2': 'Image Finder using React & Material UI',
     'projectDescription-2': 'The image finder searches for images through PixaBay API.',
     'readMore': 'Read More',
     'getInTouch': 'Get In Touch',
