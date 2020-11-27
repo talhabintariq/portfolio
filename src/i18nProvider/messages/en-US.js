@@ -16,6 +16,8 @@ export default {
     'projectDescription-1': 'Project Description',
     'projectTitle-2': 'Image Finder using React & Material UI',
     'projectDescription-2': 'The image finder searches for images through PixaBay API.',
+    'projectTitle-3': 'Wildfire Tracker',
+    'projectDescription-3': "Wildfire tracker using NASA's API.",
     'readMore': 'Read More',
     'getInTouch': 'Get In Touch',
     'name': 'Name',

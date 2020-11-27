@@ -16,6 +16,8 @@ export default {
     'projectDescription-1': 'Der Filmsucher sucht nach Filmen über die MoviesDB-API.',
     'projectTitle-2': 'Bildfinder mit React & Material UI',
     'projectDescription-2': 'Der Bildfinder sucht über die PixaBay-API nach Bildern.',
+    'projectTitle-3': 'Wildfire Tracker',
+    'projectDescription-3': 'Wildfire-Tracker mit der NASA-API.',
     'readMore': 'Weiterlesen',
     'getInTouch': 'In Kontakt kommen',
     'name': 'Name',
