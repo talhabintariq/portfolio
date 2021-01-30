@@ -103,6 +103,7 @@ h6 {
 }
 
 .greeting-wrapper {
+  clear: both;
   display: grid;
   text-align: center;
   align-content: center;
@@ -262,6 +263,10 @@ h6 {
   justify-content: space-evenly;
   padding-top: 15px;
   background-color: var(--previewShadow);
+  ul {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .social-links {
@@ -384,3 +389,17 @@ h6 {
     width: 280px;
   }
 }
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  h1 {
+    font-size: 30px;
+  }
+}
+
