@@ -38,7 +38,6 @@ const Home = () => {
                   <div id="dot-1" className="browser-dot" />
                   <div id="dot-2" className="browser-dot" />
                   <div id="dot-3" className="browser-dot" />
-                  <div id="dot-3" className="browser-dot" />
                 </div>
 
                 <ul id="navigation">
