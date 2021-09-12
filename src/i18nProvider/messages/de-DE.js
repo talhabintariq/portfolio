@@ -18,6 +18,8 @@ export default {
     'projectDescription-2': 'Der Bildfinder sucht über die PixaBay-API nach Bildern.',
     'projectTitle-3': 'Wildfire Tracker',
     'projectDescription-3': 'Wildfire-Tracker mit der NASA-API.',
+    'projectTitle-4': 'Youtube Converter & Downloader',
+    'projectDescription-4': 'Ein Konverter und Downloader für YouTube-Videos.',
     'readMore': 'Weiterlesen',
     'getInTouch': 'In Kontakt kommen',
     'name': 'Name',
