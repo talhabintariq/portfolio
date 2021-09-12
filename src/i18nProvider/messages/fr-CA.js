@@ -18,6 +18,8 @@ export default {
     'projectDescription-2': "Le chercheur d'images recherche des images via l'API PixaBay.",
     'projectTitle-3': 'Traqueur des feux de forêt',
     'projectDescription-3': "Tracker Wildfire utilisant l'API de la NASA.",
+    'projectTitle-4': 'Convertisseur et téléchargeur Youtube',
+    'projectDescription-4': 'Un convertisseur et un téléchargeur pour les vidéos youtube.',
     'readMore': 'Lire la suite',
     'getInTouch': 'Entrer en contact',
     'name': 'Nom',
