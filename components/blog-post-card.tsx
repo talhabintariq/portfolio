@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Calendar } from "lucide-react";
+import Image from "next/image";
 import { MediumPost } from "@/lib/medium";
 
 interface BlogPostCardProps {
@@ -35,11 +36,13 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
     >
       {/* Thumbnail */}
       {post.thumbnail && (
-        <div className="w-full h-48 bg-muted rounded-md mb-4 overflow-hidden">
-          <img
+        <div className="relative w-full h-48 bg-muted rounded-md mb-4 overflow-hidden">
+          <Image
             src={post.thumbnail}
             alt={post.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
           />
         </div>
       )}
