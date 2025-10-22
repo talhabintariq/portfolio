@@ -62,7 +62,7 @@ Comprehensive test suite for the portfolio website covering unit tests, integrat
 
 ### End-to-End Tests (Playwright)
 
-**Total: 80+ tests across 7 test suites**
+**Total: 130+ tests across 8 test suites**
 
 #### 1. Homepage Tests (`e2e/homepage.spec.ts`)
    - ✅ Page has correct title
@@ -163,6 +163,58 @@ Comprehensive test suite for the portfolio website covering unit tests, integrat
      - Optimal line length for reading
      - Form fields reasonably sized
 
+#### 8. Small Device Tests (`e2e/small-devices.spec.ts`)
+   - ✅ Extra Small Devices (320px - iPhone SE 1st gen, old Android)
+     - No horizontal scroll
+     - Navigation is usable
+     - All nav links accessible
+     - Hero section fits without overflow
+     - Hero text is readable
+     - CTA buttons properly sized (min 44px touch target)
+     - Skills in single column
+     - Projects in single column
+     - Contact form usable
+     - Form inputs properly sized
+     - Submit button accessible (full-width, 44px height)
+     - Footer fits properly
+     - Social links accessible (40x40px touch targets)
+     - Theme toggle accessible
+   - ✅ Small Devices (360px - Galaxy S8/S9, common Android)
+     - No horizontal overflow
+     - All sections properly sized
+     - Container padding correct (16px)
+     - Text remains readable
+     - Images scale appropriately
+   - ✅ Compact Devices (384px - Pixel 2, Nexus 5)
+     - Layout adapts properly
+     - Form layout optimized
+   - ✅ iPhone SE (3rd gen) - Real Device Profile
+     - Full device emulation
+     - Touch interactions work
+     - User agent validation
+   - ✅ Galaxy S9 - Real Device Profile
+     - Samsung device testing
+     - Proper viewport handling
+   - ✅ Small Device Landscape (568x320)
+     - Landscape mode works
+     - Navigation accessible
+     - Content fits in short viewport
+   - ✅ Touch Target Compliance
+     - All interactive elements meet WCAG AAA (44x44px)
+     - Form inputs have adequate height (44px+)
+   - ✅ Content Visibility
+     - Hero content not cut off
+     - Skills badges not truncated
+     - Project cards display properly
+     - Footer content complete
+   - ✅ Typography on Small Screens
+     - Headings appropriately sized (24px+ H1)
+     - Body text readable (14px+)
+     - Line height adequate
+   - ✅ Performance on Low-End Devices
+     - Page loads within 5 seconds
+     - Images optimized for mobile
+
 ## Running Tests
 
 ### Unit Tests (Jest)
@@ -234,11 +286,16 @@ All files            |   30.58 |    20.68 |   34.88 |   29.79
 - ✅ Loading states
 
 ### Responsiveness Testing
-- ✅ Mobile (375px width)
+- ✅ Extra Small Devices (320px - iPhone SE 1st gen, old Android)
+- ✅ Small Devices (360px - Galaxy S8/S9)
+- ✅ Compact Devices (384px - Pixel 2, Nexus 5)
+- ✅ Mobile (375px - iPhone SE 3rd gen)
 - ✅ Tablet (768px width)
 - ✅ Desktop (1920px width)
-- ✅ Touch interactions
+- ✅ Ultra-Wide (2560px, 3440px, 3840px, 5120px)
+- ✅ Touch interactions (44x44px touch targets)
 - ✅ Landscape/Portrait orientations
+- ✅ Real device emulation (iPhone SE, Galaxy S9)
 
 ### Cross-Browser Testing
 - ✅ Chromium
