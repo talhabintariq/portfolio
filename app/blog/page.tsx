@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 import { socialLinks } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Blog | Talha Bin Tariq",
+  title: "Blog | Talha B. Tariq",
   description:
     "Articles about web development, React, Next.js, TypeScript, and AI integrations.",
 };

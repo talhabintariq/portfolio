@@ -6,7 +6,7 @@ test.describe('Blog Page', () => {
   });
 
   test('has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle(/Blog.*Talha Bin Tariq/);
+    await expect(page).toHaveTitle(/Blog.*Talha B. Tariq/);
   });
 
   test('displays blog heading', async ({ page }) => {

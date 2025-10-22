@@ -137,7 +137,7 @@ MIT License - feel free to use this as a template for your own portfolio!
 
 ## Author
 
-**Talha Bin Tariq**
+**Talha B. Tariq**
 - Website: https://talhabintariq.com
 - GitHub: [@talhabintariq](https://github.com/talhabintariq)
 - LinkedIn: [talhabtariq](https://www.linkedin.com/in/talhabtariq/)

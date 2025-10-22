@@ -7,7 +7,7 @@ describe('Footer Component', () => {
     render(<Footer />)
 
     const currentYear = new Date().getFullYear()
-    expect(screen.getByText(new RegExp(`© ${currentYear} Talha Bin Tariq`))).toBeInTheDocument()
+    expect(screen.getByText(new RegExp(`© ${currentYear} Talha B. Tariq`))).toBeInTheDocument()
   })
 
   it('renders social links', () => {

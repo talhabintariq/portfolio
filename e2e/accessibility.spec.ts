@@ -81,13 +81,13 @@ test.describe('Accessibility', () => {
     await html.evaluate((el) => el.classList.remove('dark'));
 
     // Content should still be visible
-    await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+    await expect(page.getByText('Talha B. Tariq')).toBeVisible();
 
     // Test in dark mode
     await html.evaluate((el) => el.classList.add('dark'));
 
     // Content should still be visible
-    await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+    await expect(page.getByText('Talha B. Tariq')).toBeVisible();
   });
 
   test('keyboard navigation works', async ({ page }) => {

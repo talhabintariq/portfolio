@@ -6,11 +6,11 @@ test.describe('Homepage', () => {
   });
 
   test('has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle(/Talha Bin Tariq/);
+    await expect(page).toHaveTitle(/Talha B. Tariq/);
   });
 
   test('displays hero section', async ({ page }) => {
-    await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+    await expect(page.getByText('Talha B. Tariq')).toBeVisible();
     await expect(page.getByText(/Senior Frontend Engineer/i)).toBeVisible();
   });
 

@@ -48,10 +48,10 @@ test.describe('Small Device Support', () => {
       await page.goto('/');
 
       // Name should be visible
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
 
       // Text should not be cut off
-      const name = page.getByText('Talha Bin Tariq');
+      const name = page.getByText('Talha B. Tariq');
       const nameBox = await name.boundingBox();
 
       if (nameBox) {
@@ -238,7 +238,7 @@ test.describe('Small Device Support', () => {
       await page.goto('/');
 
       // Check font size is not too small
-      const heading = page.getByText('Talha Bin Tariq');
+      const heading = page.getByText('Talha B. Tariq');
       const fontSize = await heading.evaluate((el) => {
         return window.getComputedStyle(el).fontSize;
       });
@@ -271,7 +271,7 @@ test.describe('Small Device Support', () => {
     test('layout adapts to 384px width', async ({ page }) => {
       await page.goto('/');
 
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
 
       const bodyWidth = await page.evaluate(() => document.body.scrollWidth);
       expect(bodyWidth).toBeLessThanOrEqual(384);
@@ -297,7 +297,7 @@ test.describe('Small Device Support', () => {
     test('works on actual iPhone SE device profile', async ({ page }) => {
       await page.goto('/');
 
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
 
       // Test user agent
       const userAgent = await page.evaluate(() => navigator.userAgent);
@@ -324,7 +324,7 @@ test.describe('Small Device Support', () => {
     test('works on Galaxy S9 device profile', async ({ page }) => {
       await page.goto('/');
 
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
 
       const bodyWidth = await page.evaluate(() => document.body.scrollWidth);
       const viewport = await page.viewportSize();
@@ -339,7 +339,7 @@ test.describe('Small Device Support', () => {
     test('landscape mode works on small devices', async ({ page }) => {
       await page.goto('/');
 
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
 
       // No horizontal overflow
       const bodyWidth = await page.evaluate(() => document.body.scrollWidth);
@@ -357,7 +357,7 @@ test.describe('Small Device Support', () => {
       await page.goto('/');
 
       // Even with short height, essential content should be visible
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
     });
   });
 
@@ -407,7 +407,7 @@ test.describe('Small Device Support', () => {
       await page.goto('/');
 
       // All hero elements should be visible
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
       await expect(page.getByRole('link', { name: /view my work/i })).toBeVisible();
       await expect(page.getByRole('link', { name: /get in touch/i })).toBeVisible();
     });
@@ -436,7 +436,7 @@ test.describe('Small Device Support', () => {
       await page.goto('/');
 
       const footer = page.locator('footer');
-      await expect(footer.getByText(/© \d{4} Talha Bin Tariq/)).toBeVisible();
+      await expect(footer.getByText(/© \d{4} Talha B. Tariq/)).toBeVisible();
       await expect(footer.getByRole('link', { name: /github/i })).toBeVisible();
     });
   });

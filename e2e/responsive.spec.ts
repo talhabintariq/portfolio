@@ -17,7 +17,7 @@ test.describe('Responsive Design', () => {
 
       const hero = page.locator('section').first();
       await expect(hero).toBeVisible();
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
     });
 
     test('skills grid adapts to mobile', async ({ page }) => {
@@ -59,7 +59,7 @@ test.describe('Responsive Design', () => {
     test('layout adapts to tablet size', async ({ page }) => {
       await page.goto('/');
 
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
       await expect(page.getByText('Skills & Technologies')).toBeVisible();
     });
 
@@ -77,7 +77,7 @@ test.describe('Responsive Design', () => {
     test('full layout on desktop', async ({ page }) => {
       await page.goto('/');
 
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
       await expect(page.getByRole('navigation')).toBeVisible();
     });
 
@@ -123,14 +123,14 @@ test.describe('Responsive Design', () => {
       await page.setViewportSize({ width: 375, height: 812 });
       await page.goto('/');
 
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
     });
 
     test('works in landscape mode', async ({ page }) => {
       await page.setViewportSize({ width: 812, height: 375 });
       await page.goto('/');
 
-      await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+      await expect(page.getByText('Talha B. Tariq')).toBeVisible();
     });
   });
 });

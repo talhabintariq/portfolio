@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container py-8">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Talha Bin Tariq. All rights reserved.
+            © {currentYear} Talha B. Tariq. All rights reserved.
           </p>
 
           <div className="flex items-center gap-4">

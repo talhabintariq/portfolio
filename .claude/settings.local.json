@@ -5,7 +5,16 @@
       "Bash(npm run dev:*)",
       "Bash(git config:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git log:*)",
+      "Bash(taskkill:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx playwright install chromium)",
+      "Bash(npm run test:ci:*)",
+      "Bash(awk:*)",
+      "Bash(xargs:*)",
+      "Bash(find:*)",
+      "Bash(pkill:*)"
     ],
     "deny": [],
     "ask": []

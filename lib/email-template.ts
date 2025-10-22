@@ -99,7 +99,7 @@ ${data.message}
                 </a>
               </p>
               <p style="margin: 12px 0 0 0; text-align: center; color: #d1d5db; font-size: 12px;">
-                © ${new Date().getFullYear()} Talha Bin Tariq. All rights reserved.
+                © ${new Date().getFullYear()} Talha B. Tariq. All rights reserved.
               </p>
             </td>
           </tr>

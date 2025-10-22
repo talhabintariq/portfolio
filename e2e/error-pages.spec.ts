@@ -28,7 +28,7 @@ test.describe('Error Pages', () => {
     await page.getByRole('link', { name: /go home/i }).click();
 
     await expect(page).toHaveURL('/');
-    await expect(page.getByText('Talha Bin Tariq')).toBeVisible();
+    await expect(page.getByText('Talha B. Tariq')).toBeVisible();
   });
 
   test('go back button works on 404 page', async ({ page }) => {
