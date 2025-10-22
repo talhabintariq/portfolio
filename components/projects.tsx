@@ -33,7 +33,7 @@ export function Projects() {
         >
           <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of projects I've worked on, ranging from web applications to
+            A selection of projects I&apos;ve worked on, ranging from web applications to
             AI-powered tools.
           </p>
         </motion.div>

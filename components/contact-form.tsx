@@ -190,7 +190,7 @@ export function ContactForm() {
         >
           <CheckCircle className="h-5 w-5 flex-shrink-0" />
           <p className="text-sm">
-            Message sent successfully! I'll get back to you soon.
+            Message sent successfully! I&apos;ll get back to you soon.
           </p>
         </motion.div>
       )}

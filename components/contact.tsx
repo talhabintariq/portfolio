@@ -34,9 +34,9 @@ export function Contact() {
             className="space-y-6"
           >
             <div>
-              <h3 className="text-xl font-semibold mb-4">Let's Connect</h3>
+              <h3 className="text-xl font-semibold mb-4">Let&apos;s Connect</h3>
               <p className="text-muted-foreground">
-                I'm always open to discussing new opportunities, interesting
+                I&apos;m always open to discussing new opportunities, interesting
                 projects, or just having a chat about technology.
               </p>
             </div>
