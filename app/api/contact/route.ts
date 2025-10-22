@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
+import { getContactEmailTemplate } from "@/lib/email-template";
 
 // Initialize Resend
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -82,17 +83,12 @@ export async function POST(request: NextRequest) {
       to: process.env.RESEND_TO_EMAIL || "talhabintariq@gmail.com",
       replyTo: validatedData.email,
       subject: `Portfolio Contact: ${validatedData.subject}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>From:</strong> ${validatedData.name} (${validatedData.email})</p>
-        <p><strong>Subject:</strong> ${validatedData.subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${validatedData.message.replace(/\n/g, "<br>")}</p>
-        <hr>
-        <p style="color: #666; font-size: 12px;">
-          Sent from your portfolio website
-        </p>
-      `,
+      html: getContactEmailTemplate({
+        name: validatedData.name,
+        email: validatedData.email,
+        subject: validatedData.subject,
+        message: validatedData.message,
+      }),
     });
 
     if (error) {
