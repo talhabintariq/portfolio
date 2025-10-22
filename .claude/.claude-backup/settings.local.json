@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(git push:*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --eslint --no-src-dir --import-alias=\"@/*\" --use-npm)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
