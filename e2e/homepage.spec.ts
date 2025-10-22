@@ -10,15 +10,16 @@ test.describe('Homepage', () => {
   });
 
   test('displays hero section', async ({ page }) => {
-    await expect(page.getByText('Talha B. Tariq')).toBeVisible();
-    await expect(page.getByText(/Senior Frontend Engineer/i)).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Talha B. Tariq' })).toBeVisible();
+    await expect(page.getByText(/Senior Frontend Engineer/i).first()).toBeVisible();
   });
 
   test('displays navigation', async ({ page }) => {
-    await expect(page.getByRole('link', { name: 'About' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Projects' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Blog' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Contact' })).toBeVisible();
+    const nav = page.getByRole('navigation');
+    await expect(nav.getByRole('link', { name: 'About' })).toBeVisible();
+    await expect(nav.getByRole('link', { name: 'Projects', exact: true })).toBeVisible();
+    await expect(nav.getByRole('link', { name: 'Blog' })).toBeVisible();
+    await expect(nav.getByRole('link', { name: 'Contact' })).toBeVisible();
   });
 
   test('theme toggle works', async ({ page }) => {
@@ -47,8 +48,9 @@ test.describe('Homepage', () => {
   });
 
   test('smooth scrolls to sections', async ({ page }) => {
-    // Scroll to projects
-    await page.getByRole('link', { name: 'Projects' }).click();
+    // Scroll to projects using navigation link
+    const nav = page.getByRole('navigation');
+    await nav.getByRole('link', { name: 'Projects', exact: true }).click();
     await page.waitForTimeout(500);
 
     // Check if projects section is in viewport
@@ -58,8 +60,8 @@ test.describe('Homepage', () => {
 
   test('displays skills section', async ({ page }) => {
     await expect(page.getByText('Skills & Technologies')).toBeVisible();
-    await expect(page.getByText('Frontend')).toBeVisible();
-    await expect(page.getByText('Backend')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Frontend' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Backend' })).toBeVisible();
   });
 
   test('displays projects section', async ({ page }) => {
