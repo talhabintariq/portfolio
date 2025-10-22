@@ -65,6 +65,6 @@ test.describe('Error Pages', () => {
 
     // Navigation should still be visible
     await expect(page.getByRole('navigation')).toBeVisible();
-    await expect(page.getByText('TB')).toBeVisible();
+    await expect(page.getByText('TT')).toBeVisible();
   });
 });

@@ -9,7 +9,7 @@ test.describe('Responsive Design', () => {
 
       // Navigation should be visible
       await expect(page.getByRole('navigation')).toBeVisible();
-      await expect(page.getByText('TB')).toBeVisible();
+      await expect(page.getByText('TT')).toBeVisible();
     });
 
     test('hero section is responsive', async ({ page }) => {

@@ -46,7 +46,7 @@ test.describe('Blog Page', () => {
   });
 
   test('can navigate back to home', async ({ page }) => {
-    await page.getByRole('link', { name: 'TB' }).click();
+    await page.getByRole('link', { name: 'TT' }).click();
     await expect(page).toHaveURL('/');
   });
 

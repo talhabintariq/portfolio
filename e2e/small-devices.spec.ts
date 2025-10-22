@@ -20,7 +20,7 @@ test.describe('Small Device Support', () => {
       await expect(nav).toBeVisible();
 
       // Logo should be visible
-      await expect(page.getByText('TB')).toBeVisible();
+      await expect(page.getByText('TT')).toBeVisible();
     });
 
     test('navigation links are accessible', async ({ page }) => {

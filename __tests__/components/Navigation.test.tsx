@@ -14,7 +14,10 @@ describe('Navigation Component', () => {
   it('renders logo/brand', () => {
     render(<Navigation />)
 
-    expect(screen.getByText('TB')).toBeInTheDocument()
+    expect(screen.getByText('TT')).toBeInTheDocument()
+    // Verify the logo is a link to home
+    const logoLink = screen.getByText('TT').closest('a')
+    expect(logoLink).toHaveAttribute('href', '/')
   })
 
   it('renders all navigation links', () => {
