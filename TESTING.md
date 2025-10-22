@@ -62,7 +62,7 @@ Comprehensive test suite for the portfolio website covering unit tests, integrat
 
 ### End-to-End Tests (Playwright)
 
-**Total: 60+ tests across 6 test suites**
+**Total: 80+ tests across 7 test suites**
 
 #### 1. Homepage Tests (`e2e/homepage.spec.ts`)
    - ✅ Page has correct title
@@ -135,6 +135,33 @@ Comprehensive test suite for the portfolio website covering unit tests, integrat
    - ✅ Go back button works
    - ✅ 404 maintains theme
    - ✅ Navigation bar visible on 404
+
+#### 7. Ultra-Wide Monitor Tests (`e2e/ultra-wide.spec.ts`)
+   - ✅ 2560px Display (2K Ultra-Wide)
+     - Content is centered with max-width 1280px
+     - Equal margins on left and right
+     - Navigation spans full width, content centered
+     - Footer spans full width, content centered
+     - No horizontal scrolling
+   - ✅ 3440px Display (Gaming Monitor)
+     - Content remains centered
+     - Text remains readable (not stretched)
+   - ✅ 4K Display (3840px)
+     - Content perfectly centered
+     - Interactive elements accessible
+     - Images maintain aspect ratio
+   - ✅ 5K Display (5120px)
+     - Extreme wide displays still center content
+     - Substantial margins on both sides (1800px+)
+   - ✅ Container Responsive Padding
+     - Mobile (375px): 16px padding
+     - Tablet (768px): 24px padding
+     - Desktop (1920px+): 32px padding
+   - ✅ Container Max Width Enforcement
+     - Never exceeds 1280px across all viewports
+   - ✅ Content Readability
+     - Optimal line length for reading
+     - Form fields reasonably sized
 
 ## Running Tests
 
