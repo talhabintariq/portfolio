@@ -53,11 +53,7 @@ export function Projects() {
               className="group relative rounded-lg border bg-card p-6 hover:shadow-lg transition-all duration-300"
             >
               {/* Placeholder for image - will add later */}
-              <div className="w-full h-48 bg-muted rounded-md mb-4 flex items-center justify-center">
-                <span className="text-muted-foreground text-sm">
-                  Screenshot coming soon
-                </span>
-              </div>
+              <div className="w-full h-48 bg-muted/50 rounded-md mb-4"></div>
 
               {/* Title */}
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
