@@ -97,12 +97,41 @@ function extractCategories(xml: string): string[] {
 
 /**
  * Extracts thumbnail image from content
+ * Filters out tracking pixels and prefers CDN images
  */
 function extractThumbnail(xml: string): string | undefined {
-  // Try to extract from content:encoded or description
-  const contentRegex = /<img[^>]+src="([^">]+)"/;
-  const match = xml.match(contentRegex);
-  return match ? match[1] : undefined;
+  // Extract all img tags
+  const imgRegex = /<img[^>]+src="([^">]+)"/g;
+  const matches: string[] = [];
+  let match;
+
+  while ((match = imgRegex.exec(xml)) !== null) {
+    matches.push(match[1]);
+  }
+
+  if (matches.length === 0) return undefined;
+
+  // Filter out tracking/stat images and small images
+  const validImages = matches.filter((url) => {
+    // Exclude tracking pixels and stat images
+    if (url.includes("/_/stat") || url.includes("/stat?")) return false;
+    if (url.includes("tracking")) return false;
+    // Exclude very small images (likely icons or pixels)
+    if (url.includes("1x1")) return false;
+    return true;
+  });
+
+  if (validImages.length === 0) return undefined;
+
+  // Prefer CDN images over base medium.com domain
+  const cdnImage = validImages.find(
+    (url) =>
+      url.includes("cdn-images") ||
+      url.includes("miro.medium") ||
+      url.includes("cdn.medium")
+  );
+
+  return cdnImage || validImages[0];
 }
 
 /**

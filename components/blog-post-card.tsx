@@ -4,12 +4,15 @@ import { motion } from "framer-motion";
 import { ExternalLink, Calendar } from "lucide-react";
 import Image from "next/image";
 import { MediumPost } from "@/lib/medium";
+import { useState } from "react";
 
 interface BlogPostCardProps {
   post: MediumPost;
 }
 
 export function BlogPostCard({ post }: BlogPostCardProps) {
+  const [imageError, setImageError] = useState(false);
+
   // Format date
   const formattedDate = new Date(post.pubDate).toLocaleDateString("en-US", {
     year: "numeric",
@@ -35,7 +38,7 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
       className="group block rounded-lg border bg-card p-6 hover:shadow-lg transition-all duration-300"
     >
       {/* Thumbnail */}
-      {post.thumbnail && (
+      {post.thumbnail && !imageError && (
         <div className="relative w-full h-48 bg-muted rounded-md mb-4 overflow-hidden">
           <Image
             src={post.thumbnail}
@@ -43,6 +46,7 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-300"
+            onError={() => setImageError(true)}
           />
         </div>
       )}
