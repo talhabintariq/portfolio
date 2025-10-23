@@ -41,13 +41,20 @@ export function ContactForm() {
     setErrorMessage("");
 
     try {
+      // Add timeout to prevent indefinite loading
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
+        signal: controller.signal,
       });
+
+      clearTimeout(timeoutId);
 
       const result = await response.json();
 
@@ -64,9 +71,16 @@ export function ContactForm() {
       }, 5000);
     } catch (error) {
       setStatus("error");
-      setErrorMessage(
-        error instanceof Error ? error.message : "Something went wrong"
-      );
+
+      if (error instanceof Error) {
+        if (error.name === "AbortError") {
+          setErrorMessage("Request timed out. Please check your email configuration and try again.");
+        } else {
+          setErrorMessage(error.message);
+        }
+      } else {
+        setErrorMessage("Something went wrong. Please try again later.");
+      }
     }
   };
 
