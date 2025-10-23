@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Talha B. Tariq",
   },
   description:
-    "Portfolio of Talha B. Tariq - Senior Frontend Engineer specializing in React, Next.js, TypeScript, and AI integrations. Building modern web applications with cutting-edge technologies.",
+    "I build things for the web. Senior Frontend Engineer specializing in high-performance React applications and AI-powered solutions. Turning complex problems into elegant products.",
   keywords: [
     "Talha B. Tariq",
     "Frontend Engineer",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Talha B. Tariq Portfolio",
     title: "Talha B. Tariq - Senior Frontend Engineer",
     description:
-      "Portfolio of Talha B. Tariq - Senior Frontend Engineer specializing in React, Next.js, TypeScript, and AI integrations.",
+      "I build things for the web. Senior Frontend Engineer creating high-performance React applications and AI-powered solutions.",
     images: [
       {
         url: "/talha.jpg",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Talha B. Tariq - Senior Frontend Engineer",
     description:
-      "Portfolio of Talha B. Tariq - Senior Frontend Engineer specializing in React, Next.js, TypeScript, and AI integrations.",
+      "I build things for the web. Senior Frontend Engineer creating high-performance React applications and AI-powered solutions.",
     images: ["/talha.jpg"],
   },
   robots: {

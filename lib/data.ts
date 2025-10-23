@@ -1,9 +1,9 @@
 // Personal & Social Information
 export const personalInfo = {
   name: "Talha B. Tariq",
-  tagline: "Senior Frontend Engineer",
+  tagline: "I build things for the web.",
   description:
-    "Specializing in React, Next.js, TypeScript, and AI integrations. Building high-performance web applications with exceptional user experiences.",
+    "Senior Frontend Engineer specializing in high-performance React applications and AI-powered solutions. I turn complex problems into elegant, scalable products that users love.",
   email: "talhabintariq@gmail.com",
   location: "Detroit, MI",
   avatar: "/talha.jpg",
