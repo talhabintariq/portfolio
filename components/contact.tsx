@@ -45,7 +45,7 @@ export function Contact() {
             <div className="space-y-4">
               <a
                 href={socialLinks.email}
-                className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-3 w-fit text-muted-foreground hover:text-primary transition-colors"
               >
                 <div className="w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center">
                   <Mail className="h-5 w-5 text-primary" />
@@ -60,7 +60,7 @@ export function Contact() {
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-3 w-fit text-muted-foreground hover:text-primary transition-colors"
               >
                 <div className="w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center">
                   <Linkedin className="h-5 w-5 text-primary" />
@@ -77,7 +77,7 @@ export function Contact() {
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-3 w-fit text-muted-foreground hover:text-primary transition-colors"
               >
                 <div className="w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center">
                   <Github className="h-5 w-5 text-primary" />
