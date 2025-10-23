@@ -1,9 +1,9 @@
 // Personal & Social Information
 export const personalInfo = {
   name: "Talha B. Tariq",
-  tagline: "I turn ideas into clickable things.",
+  tagline: "Turning caffeine and curiosity into pixels that move.",
   description:
-    "From napkin sketch to shipped product. Web, apps, AI, content. Whatever moves the needle, I build it.",
+    "From sketch to deploy, I build fun, fast, and thoughtful digital stuff.",
   email: "talhabintariq@gmail.com",
   location: "Detroit, MI",
   avatar: "/talha.jpg",
