@@ -21,7 +21,7 @@ export function Hero() {
             src={personalInfo.avatar}
             alt={personalInfo.name}
             fill
-            className="rounded-full object-cover border-4 border-border"
+            className="rounded-full object-cover border-4 border-border ring-2 ring-border/50 shadow-lg"
             priority
           />
         </motion.div>
@@ -36,7 +36,7 @@ export function Hero() {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             {personalInfo.name}
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground">
+          <p className="text-xl md:text-2xl text-muted-foreground lowercase tracking-wide">
             {personalInfo.tagline}
           </p>
         </motion.div>
@@ -60,13 +60,13 @@ export function Hero() {
         >
           <Link
             href="/#projects"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 hover:scale-[1.02] transition-all duration-150"
           >
             View Projects
           </Link>
           <Link
             href="/#contact"
-            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium hover:bg-accent hover:text-accent-foreground hover:scale-[1.02] transition-all duration-150"
           >
             Contact Me
           </Link>

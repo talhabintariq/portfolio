@@ -1,9 +1,9 @@
 // Personal & Social Information
 export const personalInfo = {
   name: "Talha B. Tariq",
-  tagline: "Caffeine, curiosity, code.",
+  tagline: "caffeine. curiosity. code.",
   description:
-    "From sketch to deploy, I build fun, fast, and thoughtful digital stuff.",
+    "From sketch to deploy, I build fast, fun, and thoughtful digital stuff.",
   email: "talhabintariq@gmail.com",
   location: "Detroit, MI",
   avatar: "/talha.jpg",
