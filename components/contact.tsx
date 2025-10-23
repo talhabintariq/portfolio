@@ -42,7 +42,7 @@ export function Contact() {
             </div>
 
             {/* Contact Methods */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               <a
                 href={socialLinks.email}
                 className="flex items-center gap-3 w-fit text-muted-foreground hover:text-primary transition-colors"
