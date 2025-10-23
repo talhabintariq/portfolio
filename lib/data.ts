@@ -50,35 +50,15 @@ export const skills = {
   ],
 };
 
-// Featured projects (3 flagship projects)
+// Featured projects
 export const projects = [
   {
     id: "1",
-    title: "CareGo Platform",
-    description:
-      "HIPAA-compliant healthcare platform connecting patients with care providers. Built with Next.js + FastAPI, featuring real-time booking, EMR integration, and BAA-compliant architecture. [Case study - sanitized for public viewing]",
-    tags: ["Next.js", "TypeScript", "FastAPI", "AWS", "HIPAA", "Healthcare"],
-    image: "/projects/carego.jpg", // placeholder
-    demoUrl: null, // Private/NDA
-    githubUrl: null, // Private
-  },
-  {
-    id: "2",
     title: "WebChat-AI (LangGraph)",
     description:
       "Production-ready AI chatbot using LangGraph for stateful multi-agent conversations. Implements RAG with vector databases, streaming responses, and custom tool integration. [Demo deployment pending]",
     tags: ["Python", "LangChain", "LangGraph", "OpenAI", "RAG", "FastAPI"],
     image: "/projects/ai-chatbot.jpg", // placeholder
-    demoUrl: "#", // Pending deployment
-    githubUrl: "#", // Will add after deployment
-  },
-  {
-    id: "3",
-    title: "Hope For Your Garden",
-    description:
-      "Modern gardening services platform with Next.js 15, featuring ISR for dynamic content, optimized Core Web Vitals (LCP <2.5s), and mobile-first responsive design. [Deployment in progress]",
-    tags: ["Next.js 15", "React", "TypeScript", "Tailwind CSS", "Performance"],
-    image: "/projects/hope-garden.jpg", // placeholder
     demoUrl: "#", // Pending deployment
     githubUrl: "#", // Will add after deployment
   },
