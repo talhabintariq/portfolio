@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { projects } from "@/lib/data";
+import { ProjectPlaceholderAI } from "./project-placeholder-ai";
 
 const container = {
   hidden: { opacity: 0 },
@@ -52,8 +53,8 @@ export function Projects() {
               variants={item}
               className="group relative rounded-lg border bg-card p-6 hover:shadow-lg transition-all duration-300"
             >
-              {/* Placeholder for image - will add later */}
-              <div className="w-full h-48 bg-muted/50 rounded-md mb-4"></div>
+              {/* AI-themed placeholder */}
+              <ProjectPlaceholderAI />
 
               {/* Title */}
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
