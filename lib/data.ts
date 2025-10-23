@@ -3,7 +3,7 @@ export const personalInfo = {
   name: "Talha B. Tariq",
   tagline: "I build things for the web.",
   description:
-    "Senior Frontend Engineer specializing in high-performance React applications and AI-powered solutions. I turn complex problems into elegant, scalable products that users love.",
+    "Senior Frontend Engineer combining React/Next.js expertise with AI integrations (LangChain, LangGraph). I build design systems, optimize performance with RSC/ISR, and create scalable products for healthcare and startups.",
   email: "talhabintariq@gmail.com",
   location: "Detroit, MI",
   avatar: "/talha.jpg",
@@ -22,6 +22,7 @@ export const skills = {
     "React",
     "Next.js",
     "TypeScript",
+    "Design Systems & Component Libraries",
     "Tailwind CSS",
     "Material-UI",
     "Responsive Design",
@@ -49,56 +50,36 @@ export const skills = {
   ],
 };
 
-// Placeholder projects (to be replaced with CMS in Phase 2)
+// Featured projects (3 flagship projects)
 export const projects = [
   {
     id: "1",
-    title: "Hope For Your Garden",
+    title: "CareGo Platform",
     description:
-      "Professional gardening services website with modern design and booking functionality.",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    image: "/projects/hope-garden.jpg", // placeholder
-    demoUrl: "#",
-    githubUrl: "#",
+      "HIPAA-compliant healthcare platform connecting patients with care providers. Built with Next.js + FastAPI, featuring real-time booking, EMR integration, and BAA-compliant architecture. [Case study - sanitized for public viewing]",
+    tags: ["Next.js", "TypeScript", "FastAPI", "AWS", "HIPAA", "Healthcare"],
+    image: "/projects/carego.jpg", // placeholder
+    demoUrl: null, // Private/NDA
+    githubUrl: null, // Private
   },
   {
     id: "2",
-    title: "CareGo Platform",
+    title: "WebChat-AI (LangGraph)",
     description:
-      "Healthcare platform connecting patients with care providers. HIPAA-compliant booking system.",
-    tags: ["Next.js", "TypeScript", "FastAPI", "AWS"],
-    image: "/projects/carego.jpg", // placeholder
-    demoUrl: "#",
-    githubUrl: "#",
+      "Production-ready AI chatbot using LangGraph for stateful multi-agent conversations. Implements RAG with vector databases, streaming responses, and custom tool integration. [Demo deployment pending]",
+    tags: ["Python", "LangChain", "LangGraph", "OpenAI", "RAG", "FastAPI"],
+    image: "/projects/ai-chatbot.jpg", // placeholder
+    demoUrl: "#", // Pending deployment
+    githubUrl: "#", // Will add after deployment
   },
   {
     id: "3",
-    title: "AI Chatbot with RAG",
+    title: "Hope For Your Garden",
     description:
-      "Intelligent chatbot using LangChain and vector databases for context-aware responses.",
-    tags: ["Python", "LangChain", "OpenAI", "FastAPI"],
-    image: "/projects/ai-chatbot.jpg", // placeholder
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: "4",
-    title: "Wildfire Tracker",
-    description:
-      "Real-time wildfire tracking application using NASA data with interactive maps.",
-    tags: ["React", "Google Maps API", "Data Visualization"],
-    image: "/projects/wildfire.jpg", // placeholder
-    demoUrl: "#",
-    githubUrl: "https://github.com/talhabintariq/portfolio",
-  },
-  {
-    id: "5",
-    title: "YouTube Downloader",
-    description:
-      "Web application for downloading YouTube videos with various quality options.",
-    tags: ["React", "Node.js", "Express", "API Integration"],
-    image: "/projects/youtube.jpg", // placeholder
-    demoUrl: "#",
-    githubUrl: "https://github.com/talhabintariq/portfolio",
+      "Modern gardening services platform with Next.js 15, featuring ISR for dynamic content, optimized Core Web Vitals (LCP <2.5s), and mobile-first responsive design. [Deployment in progress]",
+    tags: ["Next.js 15", "React", "TypeScript", "Tailwind CSS", "Performance"],
+    image: "/projects/hope-garden.jpg", // placeholder
+    demoUrl: "#", // Pending deployment
+    githubUrl: "#", // Will add after deployment
   },
 ];
