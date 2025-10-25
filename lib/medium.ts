@@ -80,8 +80,8 @@ function extractTag(xml: string, tag: string): string {
   if (!match) return "";
 
   let content = match[1].trim();
-  // Strip CDATA sections
-  content = content.replace(/<!\[CDATA\[(.*?)\]\]>/gs, "$1");
+  // Strip CDATA sections (using [\s\S] instead of . with s flag for ES5 compatibility)
+  content = content.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1");
   return decodeHtml(content);
 }
 
