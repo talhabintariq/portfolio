@@ -105,11 +105,12 @@ export function ContactForm() {
           {...register("name")}
           type="text"
           id="name"
-          className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+          aria-invalid={errors.name ? "true" : "false"}
+          className="w-full px-4 py-2 rounded-md border bg-background placeholder:opacity-60 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 aria-[invalid=true]:border-red-500"
           placeholder="Your name"
         />
         {errors.name && (
-          <p className="mt-1 text-sm text-red-500">{errors.name.message}</p>
+          <p className="mt-2 text-sm text-red-500">{errors.name.message}</p>
         )}
       </div>
 
@@ -125,11 +126,12 @@ export function ContactForm() {
           {...register("email")}
           type="email"
           id="email"
-          className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+          aria-invalid={errors.email ? "true" : "false"}
+          className="w-full px-4 py-2 rounded-md border bg-background placeholder:opacity-60 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 aria-[invalid=true]:border-red-500"
           placeholder="your.email@example.com"
         />
         {errors.email && (
-          <p className="mt-1 text-sm text-red-500">{errors.email.message}</p>
+          <p className="mt-2 text-sm text-red-500">{errors.email.message}</p>
         )}
       </div>
 
@@ -145,11 +147,12 @@ export function ContactForm() {
           {...register("subject")}
           type="text"
           id="subject"
-          className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-          placeholder="What's this about?"
+          aria-invalid={errors.subject ? "true" : "false"}
+          className="w-full px-4 py-2 rounded-md border bg-background placeholder:opacity-60 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 aria-[invalid=true]:border-red-500"
+          placeholder="TL;DR: What do you need?"
         />
         {errors.subject && (
-          <p className="mt-1 text-sm text-red-500">{errors.subject.message}</p>
+          <p className="mt-2 text-sm text-red-500">{errors.subject.message}</p>
         )}
       </div>
 
@@ -165,11 +168,12 @@ export function ContactForm() {
           {...register("message")}
           id="message"
           rows={6}
-          className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-          placeholder="Tell me about your project or inquiry..."
+          aria-invalid={errors.message ? "true" : "false"}
+          className="w-full px-4 py-2 rounded-md border bg-background placeholder:opacity-60 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 aria-[invalid=true]:border-red-500 resize-none"
+          placeholder="Tell me what's on your mind! The more details, the better."
         />
         {errors.message && (
-          <p className="mt-1 text-sm text-red-500">{errors.message.message}</p>
+          <p className="mt-2 text-sm text-red-500">{errors.message.message}</p>
         )}
       </div>
 
@@ -210,23 +214,28 @@ export function ContactForm() {
       )}
 
       {/* Submit Button */}
-      <button
-        type="submit"
-        disabled={status === "loading"}
-        className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        {status === "loading" ? (
-          <>
-            <Loader2 className="h-5 w-5 animate-spin" />
-            <span>Sending...</span>
-          </>
-        ) : (
-          <>
-            <Send className="h-5 w-5" />
-            <span>Send Message</span>
-          </>
-        )}
-      </button>
+      <div className="space-y-2 mt-8">
+        <button
+          type="submit"
+          disabled={status === "loading"}
+          className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-medium shadow-sm hover:shadow-md hover:bg-primary/90 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {status === "loading" ? (
+            <>
+              <Loader2 className="h-5 w-5 animate-spin" />
+              <span>Sending...</span>
+            </>
+          ) : (
+            <>
+              <Send className="h-5 w-5" />
+              <span>Send Message</span>
+            </>
+          )}
+        </button>
+        <p className="text-xs text-center text-muted-foreground">
+          Replies within 24–48 hours.
+        </p>
+      </div>
     </motion.form>
   );
 }
