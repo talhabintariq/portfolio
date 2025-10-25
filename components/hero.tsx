@@ -21,7 +21,7 @@ export function Hero() {
             src={personalInfo.avatar}
             alt={personalInfo.name}
             fill
-            className="rounded-full object-cover border-4 border-border ring-2 ring-border/50 shadow-lg"
+            className="rounded-full object-cover border-4 border-border ring-2 ring-border/50 shadow-lg scale-[1.6] object-[center_35%]"
             priority
           />
         </motion.div>
