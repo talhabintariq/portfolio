@@ -106,18 +106,6 @@ export function Projects() {
             </motion.div>
           ))}
         </motion.div>
-
-        {/* More coming soon message */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <p className="text-muted-foreground">
-            More projects and detailed case studies coming soon...
-          </p>
-        </motion.div>
       </div>
     </section>
   );

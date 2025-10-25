@@ -6,7 +6,7 @@ export function Footer() {
 
   return (
     <footer className="border-t bg-background">
-      <div className="container py-8">
+      <div className="container py-12">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-sm text-muted-foreground">
             © {currentYear} Talha B. Tariq. All rights reserved.
