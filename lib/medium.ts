@@ -72,12 +72,17 @@ function parseRSSFeed(xmlText: string): MediumPost[] {
 }
 
 /**
- * Extracts content from XML tag
+ * Extracts content from XML tag and strips CDATA
  */
 function extractTag(xml: string, tag: string): string {
   const regex = new RegExp(`<${tag}[^>]*>(.*?)<\/${tag}>`, "s");
   const match = xml.match(regex);
-  return match ? decodeHtml(match[1].trim()) : "";
+  if (!match) return "";
+
+  let content = match[1].trim();
+  // Strip CDATA sections
+  content = content.replace(/<!\[CDATA\[(.*?)\]\]>/gs, "$1");
+  return decodeHtml(content);
 }
 
 /**
