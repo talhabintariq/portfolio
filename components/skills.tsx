@@ -28,13 +28,9 @@ export function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center space-y-4"
+          className="text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold">Skills & Technologies</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Here are the technologies and tools I work with to build modern,
-            high-performance applications.
-          </p>
         </motion.div>
 
         {/* Skills Grid */}
@@ -91,7 +87,7 @@ export function Skills() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-semibold">AI & Machine Learning</h3>
+            <h3 className="text-xl font-semibold">AI & Agents</h3>
             <motion.div className="flex flex-wrap gap-3">
               {skills.aiml.map((skill) => (
                 <motion.span
@@ -113,13 +109,13 @@ export function Skills() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-semibold">Tools & DevOps</h3>
+            <h3 className="text-xl font-semibold">Infrastructure & Testing</h3>
             <motion.div className="flex flex-wrap gap-3">
               {skills.devops.map((skill) => (
                 <motion.span
                   key={skill}
                   variants={item}
-                  className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 transition-colors"
+                  className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
                 >
                   {skill}
                 </motion.span>
