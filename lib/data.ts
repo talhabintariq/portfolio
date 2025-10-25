@@ -30,7 +30,7 @@ export const skills = {
     "Framer Motion",
     "Performance Optimization",
   ],
-  backend: ["Python", "FastAPI", "Node.js", "Express", "RESTful APIs", "GraphQL"],
+  backend: ["Python", "FastAPI", "Node.js", "Express", "RESTful APIs"],
   aiml: [
     "LangChain",
     "LangGraph",
@@ -56,9 +56,29 @@ export const projects = [
     id: "1",
     title: "WebChat-AI (LangGraph)",
     description:
-      "Production-ready AI chatbot using LangGraph for stateful multi-agent conversations. Implements RAG with vector databases, streaming responses, and custom tool integration. [Demo deployment pending]",
-    tags: ["Python", "LangChain", "LangGraph", "OpenAI", "RAG", "FastAPI"],
+      "Multi-agent AI chat with memory and tools. Routes conversations between specialized agents for complex workflows.",
+    tags: ["LangGraph", "RAG", "Streaming", "FastAPI", "Tools"],
     image: "/projects/ai-chatbot.jpg", // placeholder
+    demoUrl: "#", // Pending deployment
+    githubUrl: "#", // Will add after deployment
+  },
+  {
+    id: "2",
+    title: "Component Studio",
+    description:
+      "Design system and component library with live preview. Speeds up development with accessible, tested React components.",
+    tags: ["React", "TypeScript", "Storybook", "Tailwind", "WCAG"],
+    image: "/projects/component-studio.jpg", // placeholder
+    demoUrl: "#", // Pending deployment
+    githubUrl: "#", // Will add after deployment
+  },
+  {
+    id: "3",
+    title: "Performance Dashboard",
+    description:
+      "Real-time analytics platform with optimized rendering. Handles 10k+ data points with sub-100ms paint times.",
+    tags: ["Next.js", "React Query", "Charts", "WebSockets", "Optimization"],
+    image: "/projects/dashboard.jpg", // placeholder
     demoUrl: "#", // Pending deployment
     githubUrl: "#", // Will add after deployment
   },
